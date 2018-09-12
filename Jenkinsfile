@@ -2,7 +2,7 @@
 @Library('jenkins-pipeline-library@develop')
 
 
-try {
+
     def environment = null
 
     node {
@@ -19,9 +19,5 @@ try {
 
     }
     currentBuild.result = 'SUCCESS'
-} catch (e) {
-    currentBuild.result = 'FAILURE'
-    throw e
-}
 
 
